@@ -1,0 +1,16 @@
+{% block title %}
+<div style="text-align: center;">
+	<h1>Posts</h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<hr>
+{% for post in posts %}
+<div style="text-align: center;">
+	<p>{{ post['post'] }} <i>({{ post['blogger'] }})</i> </p>
+</div>
+{% endfor %}
+<hr>
+
+{% endblock %}
